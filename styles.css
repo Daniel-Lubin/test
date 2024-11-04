@@ -112,6 +112,30 @@ footer{
     flex-direction: column;
 }
 
+.headertext::after {
+    content: "";
+    display: block;
+    width: 300px;
+    height: 3px;
+    background-color: rgb(0, 20, 119);
+    margin: 5px auto 0;
+}
+/*6th Suedo class*/
+.section:hover {
+    background-color: lightgrey; /* Light blue tint */
+    transform: scale(1.02); /* Slightly enlarges the section */
+    transition: all 0.3s ease; /* Smooth transition */
+}
+/*7th Suedo class*/
+.section:nth-child(odd) {
+    background-color: #f0f0f0; /* Light gray for every other section */
+}
+
+a:visited {
+    color: rgb(129, 17, 17);
+    opacity: 0.8;
+}
+
 .topic{
     flex: 1;
 }
